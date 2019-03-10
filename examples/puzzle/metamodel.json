@@ -1,0 +1,27 @@
+{
+  "classes": [{
+    "id": "Block"
+  },{
+    "id": "Tile"
+  }],
+
+  "relations": [{
+    "id": "Block_on_Tile",
+    "name": "on",
+    "source": "Block",
+    "target": "Tile"
+  }, {
+    "id": "Block_match_Tile",
+    "name": "match",
+    "source": "Block",
+    "target": "Tile"
+  },{
+    "id": "left_of",
+    "source": "Tile",
+    "target": "Tile"
+  }, {
+    "id": "top_of",
+    "source": "Tile",
+    "target": "Tile"
+  }]
+}

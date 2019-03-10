@@ -1,0 +1,65 @@
+{
+  "objects": [{
+    "id": "block_1",
+    "type": "Block"
+  }, {
+"id": "block_2",
+"type": "Block"
+  }, {
+"id": "block_3",
+"type": "Block"
+  }, {
+    "id": "tile_1",
+    "type": "Tile"
+  },  {
+"id": "tile_2",
+"type": "Tile"
+  }, {
+"id": "tile_3",
+"type": "Tile"
+  },  {
+"id": "tile_4",
+"type": "Tile"
+  }],
+  "relations": [{
+    "type": "Block_on_Tile",
+    "source": "block_1",
+    "target": "tile_4"
+  },{
+"type": "Block_on_Tile",
+"source": "block_2",
+"target": "tile_3"
+  }, {
+"type": "Block_on_Tile",
+"source": "block_3",
+"target": "tile_1"
+  }, {
+"type": "Block_match_Tile",
+"source": "block_1",
+"target": "tile_1"
+  }, {
+"type": "Block_match_Tile",
+"source": "block_2",
+"target": "tile_2"
+  }, {
+"type": "Block_match_Tile",
+"source": "block_3",
+"target": "tile_3"
+  }, {
+    "type": "left_of",
+    "source": "tile_1",
+    "target": "tile_2"
+  }, {
+"type": "left_of",
+"source": "tile_3",
+"target": "tile_4"
+  },  {
+"type": "top_of",
+"source": "tile_1",
+"target": "tile_3"
+  },  {
+"type": "top_of",
+"source": "tile_2",
+"target": "tile_4"
+  }]
+}

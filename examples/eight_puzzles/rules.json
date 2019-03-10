@@ -1,0 +1,273 @@
+[{
+  "id": "move_left",
+  "lhs": {
+    "objects": [{
+      "id": "brick",
+      "type": "Brick"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile_left",
+      "type": "Tile"
+    }, {
+      "id": "tile_right",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "brick_on_tile",
+      "source": "brick",
+      "target": "tile_right"
+    }, {
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile_left"
+    }, {
+      "type": "block_left_brick",
+      "source": "block",
+      "target": "brick"
+    }, {
+      "type": "tile_left_tile",
+      "source": "tile_left",
+      "target": "tile_right"
+    }]
+  },
+  "rhs": {
+    "objects": [{
+      "id": "brick",
+      "type": "Brick"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile_left",
+      "type": "Tile"
+    }, {
+      "id": "tile_right",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "brick_on_tile",
+      "source": "brick",
+      "target": "tile_left"
+    }, {
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile_right"
+    }, {
+      "type": "brick_left_block",
+      "source": "brick",
+      "target": "block"
+    }, {
+      "type": "tile_left_tile",
+      "source": "tile_left",
+      "target": "tile_right"
+    }]
+  },
+  "nacs": [{
+  }]
+}, {
+  "id": "move_right",
+  "lhs": {
+    "objects": [{
+      "id": "brick",
+      "type": "Brick"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile_left",
+      "type": "Tile"
+    }, {
+      "id": "tile_right",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "brick_on_tile",
+      "source": "brick",
+      "target": "tile_left"
+    }, {
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile_right"
+    }, {
+      "type": "brick_left_block",
+      "source": "brick",
+      "target": "block"
+    }, {
+      "type": "tile_left_tile",
+      "source": "tile_left",
+      "target": "tile_right"
+    }]
+  },
+  "rhs": {
+    "objects": [{
+      "id": "brick",
+      "type": "Brick"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile_left",
+      "type": "Tile"
+    }, {
+      "id": "tile_right",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "brick_on_tile",
+      "source": "brick",
+      "target": "tile_right"
+    }, {
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile_left"
+    }, {
+      "type": "block_left_brick",
+      "source": "block",
+      "target": "brick"
+    }, {
+      "type": "tile_left_tile",
+      "source": "tile_left",
+      "target": "tile_right"
+    }]
+  },
+  "nacs": [{
+  }]
+}, {
+  "id": "move_up",
+  "lhs": {
+    "objects": [{
+      "id": "brick",
+      "type": "Brick"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile_up",
+      "type": "Tile"
+    }, {
+      "id": "tile_down",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "brick_on_tile",
+      "source": "brick",
+      "target": "tile_down"
+    }, {
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile_up"
+    }, {
+      "type": "block_top_brick",
+      "source": "block",
+      "target": "brick"
+    }, {
+      "type": "tile_top_tile",
+      "source": "tile_up",
+      "target": "tile_down"
+    }]
+  },
+  "rhs": {
+    "objects": [{
+      "id": "brick",
+      "type": "Brick"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile_up",
+      "type": "Tile"
+    }, {
+      "id": "tile_down",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "brick_on_tile",
+      "source": "brick",
+      "target": "tile_up"
+    }, {
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile_down"
+    }, {
+      "type": "brick_top_block",
+      "source": "brick",
+      "target": "block"
+    }, {
+      "type": "tile_top_tile",
+      "source": "tile_up",
+      "target": "tile_down"
+    }]
+  },
+  "nacs": [{
+  }]
+}, {
+  "id": "move_down",
+  "lhs": {
+    "objects": [{
+      "id": "brick",
+      "type": "Brick"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile_up",
+      "type": "Tile"
+    }, {
+      "id": "tile_down",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "brick_on_tile",
+      "source": "brick",
+      "target": "tile_up"
+    }, {
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile_down"
+    }, {
+      "type": "brick_top_block",
+      "source": "brick",
+      "target": "block"
+    }, {
+      "type": "tile_top_tile",
+      "source": "tile_up",
+      "target": "tile_down"
+    }]
+  },
+  "rhs": {
+    "objects": [{
+      "id": "brick",
+      "type": "Brick"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile_up",
+      "type": "Tile"
+    }, {
+      "id": "tile_down",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "brick_on_tile",
+      "source": "brick",
+      "target": "tile_down"
+    }, {
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile_up"
+    }, {
+      "type": "block_top_brick",
+      "source": "block",
+      "target": "brick"
+    }, {
+      "type": "tile_top_tile",
+      "source": "tile_up",
+      "target": "tile_down"
+    }]
+  },
+  "nacs": [{
+  }]
+}]

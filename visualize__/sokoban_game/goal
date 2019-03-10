@@ -1,0 +1,24 @@
+digraph {
+	graph [label=Goal labelloc=top]
+	node [shape=box]
+	block_0 [label="block_0:Block_0"]
+	block_1 [label="block_1:Block_1"]
+	block_2 [label="block_2:Block_2"]
+	block_3 [label="block_3:Block_3"]
+	block_4 [label="block_4:Block_4"]
+	block_5 [label="block_5:Block_5"]
+	block_6 [label="block_6:Block_6"]
+	block_7 [label="block_7:Block_7"]
+	block_8 [label="block_8:Block_8"]
+	block_1 -> block_2 [label=left_12]
+	block_2 -> block_3 [label=left_23]
+	block_4 -> block_5 [label=left_45]
+	block_5 -> block_6 [label=left_56]
+	block_7 -> block_8 [label=left_78]
+	block_8 -> block_0 [label=left_80]
+	block_1 -> block_4 [label=top_14]
+	block_4 -> block_7 [label=top_47]
+	subgraph cluster_nac_0 {
+		graph [label="nac 0" style=dotted]
+	}
+}

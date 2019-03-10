@@ -1,0 +1,29 @@
+digraph {
+	graph [label=move_left labelloc=top]
+	node [shape=box]
+	brick [label="<<preserve>>
+brick:Brick" color="#0033CC" fontcolor="#0033CC"]
+	block [label="<<preserve>>
+block:Block" color="#0033CC" fontcolor="#0033CC"]
+	tile_0 [label="<<preserve>>
+tile_0:Tile" color="#0033CC" fontcolor="#0033CC"]
+	tile_x [label="<<preserve>>
+tile_x:Tile" color="#0033CC" fontcolor="#0033CC"]
+	brick -> tile_0 [label="<<delete>>
+on" color="#FF0000" fontcolor="#FF0000"]
+	block -> tile_x [label="<<delete>>
+on" color="#FF0000" fontcolor="#FF0000"]
+	block -> brick [label="<<delete>>
+left" color="#FF0000" fontcolor="#FF0000"]
+	tile_x -> tile_0 [label="<<preserve>>
+tile_left" color="#0033CC" fontcolor="#0033CC"]
+	subgraph cluster_nac_0 {
+		graph [label="nac 0" style=dotted]
+	}
+	brick -> tile_x [label="<<create>>
+on" color="#00CC33" fontcolor="#00CC33"]
+	block -> tile_0 [label="<<create>>
+on" color="#00CC33" fontcolor="#00CC33"]
+	brick -> block [label="<<create>>
+left" color="#00CC33" fontcolor="#00CC33"]
+}

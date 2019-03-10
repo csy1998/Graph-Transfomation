@@ -1,0 +1,13 @@
+digraph {
+	graph [label=Goal labelloc=top]
+	node [shape=box]
+	block [label="block:Block"]
+	tile [label="tile:Tile"]
+	label [label="label:Label"]
+	block -> tile [label=on]
+	block -> label [label=is]
+	tile -> label [label=is]
+	subgraph cluster_nac_0 {
+		graph [label="nac 0" style=dotted]
+	}
+}

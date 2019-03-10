@@ -1,0 +1,24 @@
+{
+  "graph": {},
+  "nacs": [{
+    "objects": [{
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile1",
+      "type": "Tile"
+    }, {
+      "id": "tile2",
+      "type": "Tile"
+    }],
+    "relations": [{
+      "type": "Block_on_Tile",
+      "source": "block",
+      "target": "tile1"
+    }, {
+      "type": "Block_match_Tile",
+      "source": "block",
+      "target": "tile2"
+    }]
+  }]
+}

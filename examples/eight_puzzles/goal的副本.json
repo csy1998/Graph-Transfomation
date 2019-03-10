@@ -1,0 +1,51 @@
+
+{
+  "graph": {
+    "objects": [{
+      "id": "block_0",
+      "type": "Block"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "block",
+      "type": "Block"
+    }, {
+      "id": "tile",
+      "type": "Tile"
+    }, {
+      "id": "label",
+      "type": "Label"
+    }],
+    "relations": [{
+      "type": "block_on_tile",
+      "source": "block",
+      "target": "tile"
+    }, {
+      "type": "block_is_label",
+      "source": "block",
+      "target": "label"
+    }, {
+      "type": "tile_is_label",
+      "source": "tile",
+      "target": "label"
+    }]
+  },
+  "nacs": [{
+  }]
+}

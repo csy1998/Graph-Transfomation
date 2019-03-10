@@ -1,0 +1,80 @@
+
+{
+  "classes": [{
+    "id": "Brick"  
+  }, {
+    "id": "Block"  
+  }, {
+    "id": "Tile"
+  }, {
+    "id": "Label"
+  }], 
+
+  "relations": [{
+    "id": "brick_on_tile",      
+    "name": "on",
+    "source": "Brick",
+    "target": "Tile"
+  }, {
+    "id": "block_on_tile",      
+    "name": "on",
+    "source": "Block",
+    "target": "Tile"
+  }, {
+    "id": "brick_is_label",      
+    "name": "is",
+    "source": "Brick",
+    "target": "Label"
+  }, {
+    "id": "block_is_label",      
+    "name": "is",
+    "source": "Block",
+    "target": "Label"
+  }, {
+    "id": "tile_is_label",      
+    "name": "is",
+    "source": "Tile",
+    "target": "Label"
+  }, {
+    "id": "brick_left_block",
+    "name": "left",
+    "source": "Brick",
+    "target": "Block"
+  }, {
+    "id": "brick_top_block",
+    "name": "top",
+    "source": "Brick",
+    "target": "Block"
+  }, {
+    "id": "block_left_brick",
+    "name": "left",
+    "source": "Block",
+    "target": "Brick"
+  }, {
+    "id": "block_top_brick",
+    "name": "top",
+    "source": "Block",
+    "target": "Brick"
+  }, {
+    "id": "block_left_block",
+    "name": "block_left",
+    "source": "Block",
+    "target": "Block"
+  }, {
+    "id": "block_top_block",
+    "name": "block_top",
+    "source": "Block",
+    "target": "Block"
+  }, {
+    "id": "tile_left_tile",
+    "name": "tile_left",
+    "source": "Tile",
+    "target": "Tile"
+  }, {
+    "id": "tile_top_tile",
+    "name": "tile_top",
+    "source": "Tile",
+    "target": "Tile"
+
+  }]
+}

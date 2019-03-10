@@ -1,0 +1,16 @@
+digraph {
+	tile_0 [label=tile_0 shape=box]
+	tile_1 [label=tile_1 shape=box]
+	tile_2 [label=tile_2 shape=box]
+	agent [label=agent shape=box]
+	box [label=box shape=box]
+	trivial [label=trivial shape=box]
+	goal [label=goal shape=box]
+	tile_0 -> tile_1 [label=left_of]
+	tile_0 -> trivial [label=is]
+	tile_1 -> tile_2 [label=left_of]
+	tile_1 -> trivial [label=is]
+	tile_2 -> goal [label=is]
+	agent -> tile_1 [label=on]
+	box -> tile_2 [label=on]
+}

@@ -1,0 +1,15 @@
+digraph {
+	graph [label=move_right_04 labelloc=top]
+	node [shape=box]
+	block_4 [label="<<preserve>>
+block_4:Block_4" color="#0033CC" fontcolor="#0033CC"]
+	block_0 [label="<<preserve>>
+block_0:Block_0" color="#0033CC" fontcolor="#0033CC"]
+	block_0 -> block_4 [label="<<delete>>
+left_04" color="#FF0000" fontcolor="#FF0000"]
+	subgraph cluster_nac_0 {
+		graph [label="nac 0" style=dotted]
+	}
+	block_4 -> block_0 [label="<<create>>
+left_40" color="#00CC33" fontcolor="#00CC33"]
+}

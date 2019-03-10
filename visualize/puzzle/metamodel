@@ -1,0 +1,8 @@
+digraph {
+	Block [label=Block shape=box]
+	Tile [label=Tile shape=box]
+	Block -> Tile [label=on]
+	Block -> Tile [label=match]
+	Tile -> Tile [label=left_of]
+	Tile -> Tile [label=top_of]
+}
